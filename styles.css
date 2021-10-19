@@ -1,0 +1,118 @@
+body {
+  font-size: 15px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5%;
+  max-width: 60%;
+  height: 100%;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  min-width: 250px;
+  max-width: 250px;
+  max-height: 500px;
+  min-height: 250px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  border-top-left-radius: 2%;
+  border-bottom-left-radius: 2%;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  min-width: 250px;
+  max-width: 250px;
+  max-height: 500px;
+  min-height: 250px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  min-width: 250px;
+  max-width: 250px;
+  max-height: 500px;
+  min-height: 250px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+
+.mainText {
+  color: hsl(0, 0%, 95%);
+  font-weight: 700;
+  font-family: "Big Shoulders Display";
+  font-size: 40px;
+  padding-top: 10%;
+  text-transform: uppercase;
+  margin-bottom: 10%;
+}
+
+.contentText {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-right: 10%;
+}
+
+.sedansCarBtn,
+.suvsCarBtn,
+.luxuryCarBtn {
+  background-color: white;
+  font-size: 15px;
+  border-style: none;
+  border-radius: 2em;
+  width: 150px;
+  font-weight: 400;
+  text-align: center;
+  transition: all 0.2s;
+  height: 40px;
+  margin-top: 30%;
+  margin-bottom: 20%;
+  font-family: "Lexend Deca", sans-serif;
+}
+.sedansCarBtn {
+  color: hsl(31, 77%, 52%);
+}
+.suvsCarBtn {
+  color: hsl(184, 100%, 22%);
+}
+.luxuryCarBtn {
+  color: hsl(179, 100%, 13%);
+}
+.sedansCarBtn:hover,
+.suvsCarBtn:hover,
+.luxuryCarBtn:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-radius: 2em;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 964px) {
+  .sedans {
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 2%;
+  }
+  .luxury {
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+  }
+}
